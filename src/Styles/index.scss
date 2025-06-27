@@ -1,0 +1,80 @@
+@import 'reset.scss';
+@import 'variables.scss';
+@import 'mixins.scss';
+
+body {
+    background: radial-gradient(circle, #00a5c9 50%, rgba(46, 218, 255, 1) 100%);
+    color: $text-color;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+
+    .page {
+        background-color: $backgrund;
+        color: $text-color;
+        margin: 1.2%;
+        border-radius: 12px;
+        position: relative;
+        box-shadow: 0 5px 20px rgba(58, 57, 57, 0.432);
+        transition: all ease 0.3s;
+
+        &.dark {
+            background-color: $dark-bg;
+            color: $dark-text;
+            transition: all ease 0.3s;
+
+            a {
+                color: $dark-text
+            }
+        }
+
+    }
+
+    .container {
+        @include container;
+    }
+
+    .primary-btn {
+        @include primary-btn;
+        transition: all 0.4s;
+
+        &:hover {
+            transform: scale(1.1);
+            transition: all 0.4s;
+            background-color: rgb(56, 35, 119);
+        }
+    }
+
+    input,
+    textarea {
+        font-size: 20px;
+        background-color: rgba(252, 247, 247, 0.281);
+        backdrop-filter: blur(10px);
+        outline: none;
+        border: solid 4px $backgrund;
+        border-radius: 15px;
+        font-weight: 500;
+        color: rgb(255, 255, 255);
+    }
+
+    textarea {
+        font-size: 20px;
+        font-family: "Rubik", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: weight;
+        font-style: normal;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+        color: rgba(255, 255, 255, 0.555);
+
+    }
+
+    label {
+        margin-left: 5px;
+        color: $backgrund;
+        font-size: 23px;
+    }
+}

@@ -1,0 +1,98 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+.card {
+  width: 37%;
+  margin-bottom: 100px;
+  background: -o-linear-gradient(301deg, rgb(60, 9, 136) 0%, rgb(81, 62, 242) 100%);
+  background: linear-gradient(149deg, rgb(60, 9, 136) 0%, rgb(81, 62, 242) 100%);
+  color: white;
+  border-radius: 12px;
+  display: block;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.555);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.555);
+}
+@media (max-width: 1024px) {
+  .card {
+    width: 46%;
+  }
+}
+@media (max-width: 768px) {
+  .card {
+    width: 90%;
+  }
+}
+.card .project-photo {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+  margin-bottom: 60px;
+  border-bottom-right-radius: 150px;
+  -webkit-box-shadow: 0 5px 20px rgba(212, 210, 210, 0.205);
+          box-shadow: 0 5px 20px rgba(212, 210, 210, 0.205);
+}
+.card h3 {
+  font-size: 35px;
+  margin-bottom: 30px;
+  padding: 0 30px;
+}
+@media (max-width: 768px) {
+  .card h3 {
+    margin-bottom: 20px;
+    font-size: 28px;
+  }
+}
+.card p {
+  font-size: 17px;
+  margin-bottom: 50px;
+  padding: 0 30px;
+  line-height: 1.5;
+}
+@media (max-width: 768px) {
+  .card p {
+    font-size: 16px;
+  }
+}
+.card .tech-stacks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 40px;
+  padding: 0 30px;
+}
+.card .tech-stacks span {
+  padding: 10px 14px;
+  border: solid 3px white;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+.card .tech-stacks:last-child {
+  margin-right: 0;
+  margin-bottom: 10px;
+}
+.card .buttons-holder {
+  padding: 0 30px 30px 30px;
+}
+.card .buttons-holder svg {
+  margin-right: 15px;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.card .buttons-holder svg:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.3);
+      -ms-transform: scale(1.3);
+          transform: scale(1.3);
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}

@@ -1,0 +1,67 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+#menu_checkbox {
+  display: none;
+}
+
+.label {
+  display: none;
+  width: 30px;
+  height: 30px;
+  margin-top: 12px;
+  -webkit-transition: 0.3s ease transform;
+  -o-transition: 0.3s ease transform;
+  transition: 0.3s ease transform;
+  cursor: pointer;
+}
+@media (max-width: 1024px) {
+  .label {
+    display: block;
+  }
+}
+
+.label div {
+  width: 6px;
+  height: 6px;
+  background-color: #143240;
+  margin-left: 0;
+  margin-bottom: 6px;
+  border-radius: 4px;
+  -webkit-transition: 0.3s ease width, 0.3s ease margin-left, 0.3s ease margin-bottom, 0.3s ease background-color;
+  -o-transition: 0.3s ease width, 0.3s ease margin-left, 0.3s ease margin-bottom, 0.3s ease background-color;
+  transition: 0.3s ease width, 0.3s ease margin-left, 0.3s ease margin-bottom, 0.3s ease background-color;
+}
+.label div.dark {
+  background-color: white;
+}
+
+.label div:first-child {
+  width: 22px;
+}
+
+.label div:nth-child(2) {
+  width: 15px;
+}
+
+.label div:last-child {
+  width: 30px;
+  margin-bottom: 0;
+}
+
+#menu_checkbox:checked + .label {
+  -webkit-transform: translateY(-50%) rotateZ(-90deg);
+      -ms-transform: translateY(-50%) rotate(-90deg);
+          transform: translateY(-50%) rotateZ(-90deg);
+}
+
+#menu_checkbox:checked + .label div {
+  width: 6px;
+  margin-left: 12px;
+  margin-bottom: 3px;
+  background-color: rgb(123, 79, 255);
+}

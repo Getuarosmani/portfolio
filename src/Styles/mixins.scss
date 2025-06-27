@@ -1,0 +1,41 @@
+@import './variables.scss';
+
+$breakpoints: (
+  xs: 480px,
+  sm: 640px,
+  md: 768px,
+  lg: 1024px,
+  xl: 1280px
+);
+
+@mixin container {
+  width: 90%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 7px;
+}
+
+@mixin primary-btn {
+  padding: 15px 30px;
+  background-color: $primary-color;
+  border: none;
+  outline: none;
+  color: $backgrund;
+  border-radius: 12px;
+  position: relative;
+  z-index: 10;
+}
+
+@mixin respond($breakpoint) {
+  $value: map-get($breakpoints, $breakpoint);
+
+  @if $value {
+    @media (max-width: $value) {
+      @content;
+    }
+  }
+
+  @else {
+    @warn "Breakpoint '#{$breakpoint}' not found";
+  }
+}

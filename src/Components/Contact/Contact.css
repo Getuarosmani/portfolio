@@ -1,0 +1,103 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+.contacts {
+  padding: 40px 0 100px 0;
+  overflow: hidden;
+}
+.contacts label {
+  display: block;
+}
+.contacts .inputs-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .contacts .inputs-holder {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+.contacts .inputs-holder .contacts-left {
+  -ms-flex-preferred-size: 43%;
+      flex-basis: 43%;
+}
+.contacts .inputs-holder .contacts-left input {
+  min-width: 100%;
+  padding: 15px;
+  outline: none;
+  margin-top: 10px;
+  -webkit-box-shadow: 0 0 20px rgba(78, 66, 66, 0.384);
+          box-shadow: 0 0 20px rgba(78, 66, 66, 0.384);
+  font-size: 16px;
+}
+@media (max-width: 768px) {
+  .contacts .inputs-holder .contacts-left input {
+    min-width: 60%;
+  }
+}
+.contacts .inputs-holder .contacts-left p {
+  margin-top: 10px;
+  color: red;
+  font-size: 17px;
+  height: 16px;
+}
+.contacts .inputs-holder .contacts-right {
+  -ms-flex-preferred-size: 45%;
+      flex-basis: 45%;
+}
+.contacts .inputs-holder .contacts-right textarea {
+  min-width: 90%;
+  height: 161px;
+  padding-top: 20px;
+  padding-left: 20px;
+  -webkit-box-shadow: 0 0 20px rgba(78, 66, 66, 0.384);
+          box-shadow: 0 0 20px rgba(78, 66, 66, 0.384);
+  margin-top: 10px;
+  font-size: 16px;
+}
+.contacts .inputs-holder .contacts-right p {
+  margin-top: 10px;
+  color: red;
+  font-size: 17px;
+  height: 16px;
+}
+.contacts button {
+  padding: 15px 80px;
+  background-color: transparent;
+  outline: none;
+  border: solid 4px white;
+  border-radius: 12px;
+  color: white;
+  font-size: 18px;
+  margin-left: 50%;
+  -webkit-transform: translate(-50%);
+      -ms-transform: translate(-50%);
+          transform: translate(-50%);
+  margin-top: 30px;
+  -webkit-box-shadow: 0 0 20px rgba(78, 66, 66, 0.384);
+          box-shadow: 0 0 20px rgba(78, 66, 66, 0.384);
+}
+.contacts .name {
+  margin-bottom: 20px;
+}
+.contacts .sucsess {
+  display: block;
+  width: 100%;
+  height: 16px;
+  color: green;
+}

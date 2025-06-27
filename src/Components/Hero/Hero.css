@@ -1,0 +1,96 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+.hero .decor {
+  position: absolute;
+  left: 0;
+  top: 130px;
+  z-index: 0;
+  opacity: 0.3;
+}
+@media (max-width: 480px) {
+  .hero .decor {
+    width: 80%;
+  }
+}
+.hero .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 60px 0 100px 0;
+}
+@media (max-width: 768px) {
+  .hero .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+.hero .container .hero-left {
+  -ms-flex-preferred-size: 48%;
+      flex-basis: 48%;
+}
+@media (max-width: 768px) {
+  .hero .container .hero-left {
+    margin-bottom: 70px;
+  }
+}
+.hero .container .hero-left h1 {
+  font-size: 70px;
+  font-weight: 500;
+  color: rgb(123, 79, 255);
+  line-height: 60px;
+  margin-bottom: 60px;
+  z-index: 10;
+  position: relative;
+}
+@media (max-width: 1024px) {
+  .hero .container .hero-left h1 {
+    font-size: 55px;
+    line-height: 1.2;
+  }
+}
+.hero .container .hero-left p {
+  font-size: 17px;
+  line-height: 1.5;
+  margin-bottom: 40px;
+}
+@media (max-width: 768px) {
+  .hero .container .hero-left p {
+    font-size: 16px;
+  }
+}
+.hero .container .hero-right {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.hero .container .hero-right img {
+  width: 80%;
+  height: auto;
+  position: relative;
+  z-index: 10;
+}
+@media (max-width: 1024px) {
+  .hero .container .hero-right img {
+    width: 100%;
+  }
+}

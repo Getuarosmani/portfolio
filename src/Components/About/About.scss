@@ -1,0 +1,48 @@
+@import '../../Styles/mixins.scss';
+
+.about {
+    position: relative;
+    margin-bottom: 200px;
+
+
+
+    .background-patern {
+        position: absolute;
+        transform: rotate(180deg);
+        right: 0px;
+        top: 0px;
+        opacity: 0.4;
+    }
+
+    p {
+        font-size: 19px;
+        text-align: center;
+        padding: 40px 80px;
+        line-height: 1.6;
+        margin-bottom: 50px;
+    }
+
+
+    .tech-stacks {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 60px;
+        justify-items: center;
+        width: 50%;
+        margin: 0 auto;
+
+        @include respond(lg) {
+            gap: 35px;
+        }
+
+        @include respond(md) {
+            grid-template-columns: repeat(2, 1fr);
+
+        }
+
+        .tech-icons {
+            width: 60px;
+            height: 60px;
+        }
+    }
+}

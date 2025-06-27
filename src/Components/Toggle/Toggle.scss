@@ -1,0 +1,46 @@
+.switch-wrapper {
+  display: inline-block;
+
+  .switch {
+    position: relative;
+    height: 29px;
+    width: 50px;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    border-radius: 9999px;
+    background-color: rgba(81, 62, 242, 0.277);
+    transition: all 0.3s ease;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 19px;
+      width: 19px;
+      background-color: white;
+      border: 1px solid rgba(81, 62, 242, 0.527);
+      border-radius: 9999px;
+      box-shadow: 0 3px 10px rgba(81, 62, 242, 0.327);
+      transition: all 0.3s ease;
+    }
+
+    &:hover::before {
+      box-shadow: 0 0 0px 8px rgba(0, 0, 0, 0.15);
+    }
+
+    &:checked {
+      background-color: rgba(81, 62, 242, 1);
+
+      &::before {
+        transform: translateX(1.4rem); // slide the circle
+        border-color: rgba(81, 62, 242, 1);
+      }
+
+      &:hover::before {
+        box-shadow: 0 0 0px 8px rgba(81, 62, 242, 0.15);
+      }
+    }
+  }
+}

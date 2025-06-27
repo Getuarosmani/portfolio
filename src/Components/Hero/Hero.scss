@@ -1,0 +1,79 @@
+@import '../../Styles/variables.scss';
+@import '../../Styles/mixins.scss';
+
+.hero {
+
+    .decor {
+        position: absolute;
+        left: 0;
+        top: 130px;
+        z-index: 0;
+        opacity: 0.3;
+
+        @include respond(xs) {
+            width: 80%;
+        }
+    }
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        padding: 60px 0 100px 0;
+
+        @include respond(md) {
+            flex-direction: column;
+        }
+
+        .hero-left {
+            flex-basis: 48%;
+
+            @include respond(md) {
+                margin-bottom: 70px;
+            }
+
+            h1 {
+                font-size: 70px;
+                font-weight: 500;
+                color: $primary-color;
+                line-height: 60px;
+                margin-bottom: 60px;
+                z-index: 10;
+                position: relative;
+
+                @include respond(lg) {
+                    font-size: 55px;
+                    line-height: 1.2;
+                }
+            }
+
+            p {
+                font-size: 17px;
+                line-height: 1.5;
+                margin-bottom: 40px;
+
+                @include respond(md) {
+                    font-size: 16px;
+                }
+            }
+        }
+
+        .hero-right {
+            flex-basis: 50%;
+            display: flex;
+            justify-content: flex-end;
+
+            img {
+                width: 80%;
+                height: auto;
+                position: relative;
+                z-index: 10;
+
+                @include respond(lg) {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

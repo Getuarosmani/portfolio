@@ -1,0 +1,30 @@
+@import '../../Styles/variables.scss';
+
+
+.projects {
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.973) 30%, rgba(255, 255, 255, 0.767)),
+    url('../../assets/projects-background.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 12px;
+
+
+  &.dark {
+    background:
+      linear-gradient(rgba(33, 33, 33, 0.973) 30%, rgba(33, 33, 33, 0.767)),
+      url('../../assets/projects-background.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+  }
+
+  .cards-holder {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 70px;
+  }
+}
