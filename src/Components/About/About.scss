@@ -17,11 +17,10 @@
     p {
         font-size: 19px;
         text-align: center;
-        padding: 40px 80px;
+        padding: 40px 10px;
         line-height: 1.6;
         margin-bottom: 50px;
     }
-
 
     .tech-stacks {
         display: grid;
@@ -32,7 +31,7 @@
         margin: 0 auto;
 
         @include respond(lg) {
-            gap: 35px;
+            gap: 60px;
         }
 
         @include respond(md) {

@@ -1,5 +1,5 @@
 import React from 'react'
-import './About.css'
+import './About.scss'
 import html from '../../assets/html.png';
 import css from '../../assets/css.png';
 import js from '../../assets/js.png';

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import './Contact.css';
+import './Contact.scss';
 import { Title } from '../Title/Title';
 
 export const Contact = () => {

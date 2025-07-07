@@ -1,5 +1,5 @@
 import React from 'react'
-import './Hero.css'
+import './Hero.scss'
 import me from '../../assets/hero.svg'
 import decor from '../../assets/hero-decor.png'
 

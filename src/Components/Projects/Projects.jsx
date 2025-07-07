@@ -1,5 +1,5 @@
 import { useTheme } from '../../ThemeContext'
-import './Projects.css'
+import './Projects.scss'
 import { Title } from '../Title/Title'
 import { Card } from '../Card/Card'
 import edusity from '../../assets/edusity.png'

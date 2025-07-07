@@ -1,5 +1,5 @@
 import React from 'react'
-import './Card.css'
+import './Card.scss'
 
 
 export const Card = ({ image, title, text, tech, code, deployment }) => {

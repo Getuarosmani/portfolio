@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { useTheme } from '../../ThemeContext.jsx'
-import './Navbar.css'
+import './Navbar.scss'
 import logo from '../../assets/logo.svg'
 import { Toggle } from '../../Components/Toggle/Toggle.jsx'
 import { Burger } from './Burger/Burger'

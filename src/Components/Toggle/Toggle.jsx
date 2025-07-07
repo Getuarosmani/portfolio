@@ -1,6 +1,6 @@
 
 import { useTheme } from '../../ThemeContext';
-import './Toggle.css';
+import './Toggle.scss';
 
 export const Toggle = () => {
  
